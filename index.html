@@ -1,15 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1G9B4MMBV"></script>
-    <script script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-S1G9B4MMBV');
-    </script>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -17,12 +8,14 @@
     />
     <meta
       name="description"
-      content="Professional Server Monitoring & Linux Administration. Specializing in Zabbix Setup and LAMP Stack Environments."
+      content="Puhirek — Zabbix monitoring, Linux server setup, and ongoing infrastructure support. Working with clients across Europe and Asia from UTC+8."
     />
     <meta name="author" content="Shuta Saito" />
-    <title>SS-Infra | Professional Infrastructure & Zabbix Solutions</title>
+    <title>Puhirek | Infrastructure &amp; Zabbix Solutions</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
     <!-- Bootstrap icons-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -42,9 +35,16 @@
     <!-- Navigation-->
     <nav class="navbar navbar-dark navbar-custom static-top">
       <div class="container">
-        <a class="navbar-brand navbar-brand-custom fw-bold" href="/"
-          >SS-Infra</a
-        >
+        <a class="navbar-brand navbar-brand-custom fw-bold d-flex align-items-center" href="/">
+          <img
+            src="assets/puhirek-mark-1024.png"
+            alt=""
+            width="32"
+            height="32"
+            class="me-2"
+          />
+          Puhirek
+        </a>
 
         <a
           class="btn btn-outline-light btn-nav-custom"
@@ -80,7 +80,7 @@
       </div>
     </header>
     <!-- Icons Grid-->
-    <section class="features-icons features-icons-custom bg-light text-center">
+    <section class="features-icons features-icons-custom text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -180,6 +180,80 @@
         </div>
       </div>
     </section>
+
+    <!-- Selected Work -->
+    <section class="features-icons text-center" id="work">
+      <div class="container">
+        <h2 class="mb-5">Selected Work</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h3 class="h4 text-center mb-3">SS-Infra — Developer Tools Portal</h3>
+            <p class="lead text-center">
+              A portal of 31 web-based tools for infrastructure and web
+              development, covering DNS, SSL/TLS, WHOIS, HTTP diagnostics and
+              data conversion. Designed, built, and operated solo since
+              September 2026.
+            </p>
+            <p class="text-center mb-4">
+              <strong>Stack:</strong> PHP 8, Tailwind CSS, no framework
+            </p>
+            <ul class="text-start mb-4">
+              <li class="mb-2">
+                <strong>SSL/TLS certificate inspection</strong> — reads
+                certificate expiry, issuer and alternative names, and flags
+                certificates expiring within 30 days
+              </li>
+              <li class="mb-2">
+                <strong>DNS record lookup</strong> — resolves A, AAAA, CNAME,
+                MX, TXT and NS records in a single query, for verifying
+                nameserver migrations
+              </li>
+              <li class="mb-2">
+                <strong>TCP port checker</strong> — tests reachability and
+                measures response time in milliseconds, with presets for common
+                services
+              </li>
+              <li class="mb-2">
+                <strong>PHP legacy code scanner</strong> — built on
+                token_get_all() lexical analysis; detects deprecated functions
+                and unsafe patterns without executing the code
+              </li>
+            </ul>
+            <div class="text-center">
+              <a
+                class="btn btn-primary"
+                href="https://ss-infra.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit SS-Infra (Japanese)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="features-icons bg-light text-center" id="about">
+      <div class="container">
+        <h2 class="mb-5">About</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="lead">
+              I am Shuta Saito, a backend and infrastructure engineer based in
+              the Philippines. I work on Zabbix monitoring, Linux server
+              configuration, and PHP development.
+            </p>
+            <p class="lead">
+              Operating in <strong>UTC+8</strong>, my working hours overlap with
+              European mornings and Asian business hours. I welcome small,
+              well-scoped tasks as well as ongoing maintenance work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Call to Action-->
     <section class="call-to-action text-white text-center" id="signup">
       <div class="container position-relative">
@@ -187,8 +261,7 @@
           <div class="col-xl-6">
             <h2 class="mb-4">Ready to stabilize your infrastructure?</h2>
             <p class="mb-4">
-              Let's discuss your project on Upwork and build a reliable system
-              together.
+              Tell me what you need — on Upwork or by email. Small, well-scoped tasks are welcome.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
               <a
@@ -198,6 +271,12 @@
                 rel="noopener noreferrer"
               >
                 Contact on Upwork
+              </a>
+              <a
+                class="btn btn-outline-light btn-lg px-5"
+                href="mailto:info@puhirek.com"
+              >
+                Email
               </a>
             </div>
           </div>
@@ -210,16 +289,22 @@
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
             <p class="text-muted small mb-4 mb-lg-0">
-              &copy; 2026 SS-Infra / Shuta Saito. All Rights Reserved.
+              &copy; 2026 Puhirek / Shuta Saito. All Rights Reserved.
             </p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item me-4">
+                <a href="mailto:info@puhirek.com" aria-label="Email">
+                  <i class="bi-envelope-fill fs-3"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
                 <a
                   href="https://www.upwork.com/freelancers/~011ee6853f6a7b73c7?mp_source=share"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Upwork"
                 >
                   <i class="bi-briefcase-fill fs-3"></i>
                 </a>
@@ -233,6 +318,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </body>
 </html>

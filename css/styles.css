@@ -11339,14 +11339,13 @@ footer.footer {
   padding-bottom: 4rem; */
 }
 
+:root {
+  --brand-dark: #1a202c;
+}
+
 /* ナビゲーションをシャープにする */
 .navbar-custom {
-  background-color: rgba(
-    26,
-    32,
-    44,
-    0.9
-  ) !important; /* 少し青みのある深いグレー */
+  background-color: var(--brand-dark);
   backdrop-filter: blur(10px); /* 背後をボカす（これがかっこいい！） */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* 下に細い線を入れて引き締める */
   padding-top: 1rem;
